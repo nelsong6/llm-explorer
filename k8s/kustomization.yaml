@@ -11,4 +11,4 @@ resources:
 images:
 - name: romainecr.azurecr.io/llm-explorer
   newName: romainecr.azurecr.io/llm-explorer
-  newTag: c01c1eb
+  newTag: 728f313
