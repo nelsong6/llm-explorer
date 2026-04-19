@@ -2,7 +2,7 @@ param(
     [string]$Model
 )
 
-$API_BASE = "https://api.romaine.life/llm"
+$API_BASE = "https://llm-explorer.romaine.life/llm"
 $PROFILE_DIR = "D:\profiles\shell-config-profile-1"
 
 # --- JWT minting (same secret as fzt-terminal) ---
