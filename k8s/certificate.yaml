@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: llm-explorer-tls
+  namespace: llm-explorer
+spec:
+  secretName: llm-explorer-tls
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  dnsNames:
+    - llm-explorer.romaine.life
