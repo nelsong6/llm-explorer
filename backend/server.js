@@ -7,7 +7,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { CosmosClient } from '@azure/cosmos';
 import { DefaultAzureCredential } from '@azure/identity';
-import { createLLMRoutes } from '@nelsong6/llm-explorer-routes';
+import { createLLMRoutes } from './routes/index.js';
 import { createRequireAuth } from './auth.js';
 import { fetchConfig } from './config.js';
 
