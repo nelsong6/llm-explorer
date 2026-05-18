@@ -25,7 +25,7 @@ resource "azurerm_user_assigned_identity" "llm_explorer" {
 
 import {
   to = azurerm_user_assigned_identity.llm_explorer
-  id = "/subscriptions/aee0cbd2-8074-4001-b610-0f8edb4eaa3c/resourcegroups/infra/providers/Microsoft.ManagedIdentity/userAssignedIdentities/llm-explorer-identity"
+  id = "/subscriptions/aee0cbd2-8074-4001-b610-0f8edb4eaa3c/resourceGroups/infra/providers/Microsoft.ManagedIdentity/userAssignedIdentities/llm-explorer-identity"
 }
 
 # ----------------------------------------------------------------------------
@@ -91,7 +91,7 @@ resource "azurerm_federated_identity_credential" "llm_explorer" {
 
 import {
   to = azurerm_federated_identity_credential.llm_explorer
-  id = "/subscriptions/aee0cbd2-8074-4001-b610-0f8edb4eaa3c/resourcegroups/infra/providers/Microsoft.ManagedIdentity/userAssignedIdentities/llm-explorer-identity/federatedIdentityCredentials/aks-cluster-llm-explorer"
+  id = "/subscriptions/aee0cbd2-8074-4001-b610-0f8edb4eaa3c/resourceGroups/infra/providers/Microsoft.ManagedIdentity/userAssignedIdentities/llm-explorer-identity/federatedIdentityCredentials/aks-cluster-llm-explorer"
 }
 
 output "llm_explorer_identity_client_id" {
